@@ -247,7 +247,6 @@ var qParameter=['travel','ocean','cat','happy','beautiful','programmer','beach',
 
 
 
-
 $(document).on("click", ".giphy", function(){
     var y = document.getElementById("giphyPlace");
     if (y.style.display === "block") {
