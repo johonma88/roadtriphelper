@@ -158,3 +158,46 @@ footer
     width: 100%;
     text-align: center;
 }
+
+#giphyBt{
+    top: 15px;
+ text-align: right;
+ 
+}
+
+.giphy{
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    background: url(groovy.png);
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+    
+}
+
+.giphy:hover{
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+#giphyPlace{
+        height: 300px;
+        width:600px;
+        text-align: right;
+        position: absolute;
+        top: 220px;
+        left: 1000px;
+        z-index: 5;
+        padding: 5px;
+        font-family: 'Roboto', 'sans-serif';
+   
+   
+}
+#giphyImages{
+    height: 400px;
+    width:600px;
+    border-radius: 50%;
+   
+}
+
+
