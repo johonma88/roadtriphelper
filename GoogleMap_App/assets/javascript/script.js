@@ -243,7 +243,7 @@ function hideShow() {
 //giphy AJAX 
 let apiKey = 'mGXUkk6sqAk5YSAWK1dfK9SNbNHpmzI6';
 var rating= 'rating=g';
-var qParameter=['travel','animals','funny','happy','laugh','humor','joy','awesome','fun','vacation'];
+var qParameter=['travel','animals','funny','happy','laugh','humor','joy','beautiful','fun','vacation'];
 
 
 
