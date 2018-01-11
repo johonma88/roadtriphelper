@@ -240,7 +240,7 @@ function hideShow() {
     }
 }
 
-//giphy
+//giphy AJAX 
 let apiKey = 'mGXUkk6sqAk5YSAWK1dfK9SNbNHpmzI6';
 var rating= 'rating=g';
 var qParameter=['groovy','silly','funny','happy','laugh','humor','joke','awesome','fun','hilarious'];
