@@ -1,92 +1,176 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
 
-body 
+header
 {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  background: url('https://images.unsplash.com/photo-1477951233099-d2c5fbd878ee?auto=format&fit=crop&w=3898&q=80') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  color: #0a0a0b;
-  overflow: hidden; 
+    background-color: black;
+    font-family: 'Indie Flower', cursive;
+    border-bottom: 5px solid rgb(93, 163, 243);
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 2% 0 1% 1%;
 }
 
-
-h1
+#map 
 {
-  font-family: 'Indie Flower', cursive;
-  font-size: 70px;
-  font-weight: 700;
-  color: #fff;
-  margin: 10% 0 10% 0;
+    height: 84%;
+    position: fixed;
+    top: 0;
 }
 
-.cover  
+body,
+html 
 {
-  height: 100%;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), to(rgba(0,0,0,0)));
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
-  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
-  padding: 20px 50px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-#car 
+#floating-panel 
 {
-width: 400px;
-opacity: 1.0;
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    z-index: 5;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    border-style: dashed;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: 'Merienda', cursive;
+    font-size: 15px;
 }
 
-#main-txt 
+#tag 
 {
-  font-size: 68px;
-  font-weight: bold;
+    font-size: 25px;
 }
 
-#button1
+#floating-panel a 
 {
-  font-family: 'Kalam', cursive;
-  margin: 2% 0 20% 0;
-  border: none;
-  font-size: 30px;
+    display: block;
+    text-decoration: none;
+    clear: both;
 }
 
-a.animated-button.victoria-one:after 
+#floating-panel1 
 {
-  background: rgba(0,0,0,0.5);
+    padding: 30px;
 }
 
-a.animated-button:link
+#floating-panel2 
 {
-  color: black;
+    position: absolute;
+    top: 115px;
+    left: 98px;
+    z-index: 5;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    float: left;
+    background: rgba(255, 255, 255, 0.0);
+}
+
+#places 
+{
+    width: 90%;
+    height: 20%;
+    overflow: scroll;
+    border: none;
+    margin-bottom: 7%;
+    font-family: 'Merienda', cursive;
+}
+
+.table th 
+{
+    text-align: center;
+}
+
+.go 
+{
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 6px;
+    width: 120px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.go:after 
+{
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.go:active:after 
+{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#paneToggle
+{
+    background-color: rgb(93, 163, 243);
+    font-family: 'Kalam', cursive;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+  
+#paneToggle:hover 
+{
+    background-color: lightblue;
+}
+  
+#paneToggle:active 
+{
+    background-color: lightblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 footer
 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,1);
     color: white;
     width: 100%; 
-    margin-top: 60px;
+    margin-top: 40px;
+    border-top: 5px solid rgb(93, 163, 243);
     padding: 10px 0;
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     text-align: center;
 }
-
-
-  
