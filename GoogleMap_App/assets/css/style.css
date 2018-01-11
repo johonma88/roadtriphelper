@@ -14,7 +14,7 @@ header
 
 #map 
 {
-    height: 77%;
+    height: 84%;
     position: fixed;
     top: 0;
 }
@@ -30,7 +30,11 @@ html
 #floating-panel 
 {
     position: absolute;
+<<<<<<< HEAD
     top: 250px;
+=======
+    top: 220px;
+>>>>>>> b52759c5bd4c7f901725c9dfdb1f2ff2fe4d4afd
     left: 0px;
     z-index: 5;
     padding: 5px;
@@ -65,8 +69,8 @@ html
 #floating-panel2 
 {
     position: absolute;
-    top: 95px;
-    left: 5px;
+    top: 100px;
+    left: 140px;
     z-index: 5;
     padding: 5px;
     text-align: center;
@@ -136,10 +140,26 @@ html
     background-color: rgb(93, 163, 243);
     font-family: 'Kalam', cursive;
     color: white;
+    text-align: center;
+    cursor: pointer;
     font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
 
-
+  
+#paneToggle:hover 
+{
+    background-color: lightblue;
+}
+  
+#paneToggle:active 
+{
+    background-color: lightblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 
 footer
 {
