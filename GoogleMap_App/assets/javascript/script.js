@@ -240,10 +240,10 @@ function hideShow() {
     }
 }
 
-//giphy AJAX 
+//giphy
 let apiKey = 'mGXUkk6sqAk5YSAWK1dfK9SNbNHpmzI6';
 var rating= 'rating=g';
-var qParameter=['travel','animals','funny','happy','laugh','humor','joy','awesome','fun','vacation'];
+var qParameter=['travel','ocean','cat','happy','beautiful','programmer','beach','dog','driving','mountain'];
 
 
 
