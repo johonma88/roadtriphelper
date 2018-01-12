@@ -10,7 +10,10 @@ header
     font-weight: 700;
     font-size: 25px;
     padding: 2% 0 1% 1%;
-    height: 140px;
+}
+
+#rtLogo {
+    margin: 0px;
 }
 
 #map 
@@ -31,7 +34,7 @@ html
 #floating-panel 
 {
     position: absolute;
-    top: 185px;
+    top: 253px;
     left: 0px;
     z-index: 5;
     padding: 5px;
@@ -130,7 +133,7 @@ html
     border-radius: 15px;
     box-shadow: 0 9px #999;
     position: absolute;
-    top: 70px;
+    top: 15px;
     left: 60px;
     z-index: 5;
     padding: 5px;
@@ -167,11 +170,7 @@ footer
 }
 
 #giphyBt{
-    top: -35px;
  text-align: right;
- top: 40px;
- left: 1500px;
- position: absolute;
 }
 
 .giphy {
@@ -205,5 +204,3 @@ footer
     width:600px;
     border-radius: 50%;
 }
-
-
