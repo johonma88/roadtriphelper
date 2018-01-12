@@ -7,6 +7,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Directions service</title>
+    <link rel="icon" type="image/png" href="..\favicon-96x96.png">
+
     <!--BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,11 +22,6 @@
     <!--JAVASCRIPT-BOOTSTRAP -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-    <!-- External style -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -30,29 +29,32 @@
     <!-- style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>Directions service</title>
-    <link rel="icon" type="image/png" href="..\favicon-96x96.png">
-
 </head>
 
 <header>
     <div class="text-center">
-        <h1>Road Trip Helper</h1>
-        <div id="row">
-            <div id="col-sm-3">
+        <h1 id="rtLogo">Road Trip Helper</h1>
+    </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div>
                 <button onclick="hideShow()" id="paneToggle">Hide/Show</button>
             </div>
-            <div id="col-sm-6">
+            </div>
+
+            <div class="col-sm-6">
                 
             </div>
-            <div id="col-sm-3">
+
+            <div class="col-sm-3">
                 <div id="giphyBt">
-                    <img class="giphy"  src="drive.svg" class="w3-circle" >
-                 </div>
+                    <img class="giphy"  src="drive.svg" class="w3-circle" >    
+                </div>
             </div>
         </div>
+
         <div id="giphyPlace"></div>
-    </div>
+
 </header>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
