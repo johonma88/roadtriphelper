@@ -243,10 +243,6 @@ function hideShow() {
 //giphy
 let apiKey = 'mGXUkk6sqAk5YSAWK1dfK9SNbNHpmzI6';
 var rating= 'rating=g';
-// var qParameter=['travel','vacation','funny','happy','laugh','humor','joke','relax','fun','joy'];
-
-
-
 
 $(document).on("click", ".giphy", function(){
     var y = document.getElementById("giphyPlace");
@@ -255,8 +251,6 @@ $(document).on("click", ".giphy", function(){
     } else {
         y.style.display = "block";
     }
-    
-        //   var gif=qParameter[Math.floor((Math.random() * 10) + 1)];
         
             $('#giphyPlace').empty();
           
