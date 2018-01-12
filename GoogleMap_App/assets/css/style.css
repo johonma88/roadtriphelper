@@ -31,7 +31,7 @@ html
 #floating-panel 
 {
     position: absolute;
-    top: 250px;
+    top: 185px;
     left: 0px;
     z-index: 5;
     padding: 5px;
@@ -170,20 +170,17 @@ footer
     top: -35px;
  text-align: right;
  top: 40px;
- left: 1700px;
+ left: 1500px;
  position: absolute;
- 
 }
 
-.giphy{
-  
+.giphy {
     border-radius: 50%;
     height:100px;
     width:100px;
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
     transition: width 2s, height 2s, transform 2s;
     top: 100px;
-   
 }
 
 .giphy:hover{
